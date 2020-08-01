@@ -13,14 +13,48 @@
   color: white;
 }
 
+.toasted {
+  color: var(--color4);
+}
+
+.green-light {
+  color: var(--color3);
+}
+
+.green-dark {
+  color: var(--color1);
+}
+
+.green-med {
+  color: var(--color2);
+}
+
+.align-left {
+  text-align: left;
+}
+
 .bold {
   font-weight: bolder;
+}
+
+.banner-image-1 {
+  background-image: url(../images/store7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-image-2 {
+  background-image: url(../images/clerk2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* =================== NAVBAR SECTION ===================== */
 
 .main-nav {
-  height: 160px;
+  height: 20vh;
   width: 100%;
   background-color: var(--color2);
   display: flex;
@@ -28,6 +62,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 .logo-container {
   width:100%;
@@ -52,9 +90,9 @@
 /* ======================= NAVBAR MEDIA QUERIES =============== */
 
 /* TABLET */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .main-nav {
-    height: 80px;
+    height: 10vh;
     width: 100%;
     justify-content: space-between;
   }
@@ -77,8 +115,6 @@
   }
   
   .main-nav {
-    height: 80px;
-    width: 100%;
     justify-content: space-between;
   }
   
@@ -94,5 +130,166 @@
 
   .menu-item {
     display: inline;
+  }
+}
+
+/* ======================== TOP SECTION ====================== */
+
+.top-banner {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  top: 20vh;
+  padding-top: 7%;
+}
+
+.banner-text {
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  width: 90%;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.main-search {
+  height: fit-content;
+  background-color: rgb(200, 200, 200, 0.7);
+  border-radius: 5px;
+  padding: 4%;
+  margin-top: 10%;
+}
+
+.search-input {
+  width: 100%;
+  margin: 0 0 1% 0;
+  border-radius: 5px;
+  height: 5vh;
+  padding-left: 3%;
+  border: 1px solid var(--color1);
+}
+
+.search-button {
+  width: 100%;
+  height: 8vh;
+  margin: 5% 0 1% 0;
+  background-color: var(--color2);
+  border-radius: 5px;
+  border: 1px solid var(--color1);
+}
+
+.works-button {
+  height: 8vh;
+  margin: 5% 0 0 0;
+  border-radius: 5px;
+  background-color: var(--color3);
+  border: 1px solid var(--color1);
+}
+
+/* ======================= TOP SECTION MEDIA QUERIES ===================== */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .top-banner {
+    height: 60vh;
+    top: 10vh;
+    padding-top: 1%;
+  }
+
+  .banner-text {
+    width: 80%;
+    height: 90%;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 7% 1% 1% 1%;
+  }
+
+  .main-search {
+    height: 20vh;
+    padding-top: 5%;
+    margin: 7% 0 0 0;
+  }
+  
+  .search-input {
+    margin: 0;
+    width: 50%;
+  }
+  
+  .search-button {
+    margin: 0;
+    width: 20%;
+    height: 5vh;
+  }
+  
+  .works-button {
+    display: none;
+    margin: 0;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .banner-text {
+    width: 50%;
+    padding: 3% 1% 1% 1%;
+  }
+
+  .main-search {
+    height: 20vh;
+    padding-top: 5%;
+    margin: 12% 0 0 0;
+  }
+}
+
+/* =========================== MIDDLE SECTION ================= */
+#instructions {
+  position: relative;
+  top: 20vh;
+  background-color: var(--color3);
+  text-align: center;
+  padding: 5% 1% 1% 1%;
+}
+.instruction-set {
+  height: 50vh;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+    "instruction1"
+    "instruction2"
+    "instruction3"
+    "instruction4";
+}
+
+.instruction1 {
+  grid-area: instruction1;
+}
+
+.instruction2 {
+  grid-area: instruction2;
+}
+
+.instruction3 {
+  grid-area: instruction3;
+}
+
+.instruction4 {
+  grid-area: instruction4;
+}
+/* =========================== MIDDLE SECTION MEDIA QUERIES ================== */
+
+@media screen and (min-width: 768px) {
+  #instructions {
+    top: 10vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .instruction-set{
+    grid-template-areas:
+      "instruction1 instruction2"
+      "instruction3 instruction4";
   }
 }
