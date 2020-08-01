@@ -190,6 +190,7 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) {
+  /* *****************SEARCH SECTION******************* */
   .top-banner {
     height: 60vh;
     top: 10vh;
@@ -232,6 +233,7 @@
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
+  /* *****************SEARCH SECTION******************* */
   .banner-text {
     width: 50%;
     padding: 3% 1% 1% 1%;
@@ -250,17 +252,18 @@
   top: 20vh;
   background-color: var(--color3);
   text-align: center;
-  padding: 5% 1% 1% 1%;
+  padding: 5% 1% 5% 1%;
 }
 .instruction-set {
-  height: 50vh;
+  height: fit-content;
   width: 100%;
   display: grid;
   grid-template-areas: 
-    "instruction1"
-    "instruction2"
-    "instruction3"
-    "instruction4";
+    "instruction1 instruction1"
+    "instruction2 instruction2"
+    "instruction3 instruction3"
+    "instruction4 instruction4";
+  margin: 10% 0 0 0;
 }
 
 .instruction1 {
@@ -278,18 +281,48 @@
 .instruction4 {
   grid-area: instruction4;
 }
+
+.instruction-card {
+  padding: 10%;
+}
+
+.instruction-icon {
+  height: 80px;
+  width: 80px;
+  margin: 3%;
+}
+
+.instruction-title {
+  margin: 2%;
+}
+
+.instruction-text {
+  margin: 2%;
+}
 /* =========================== MIDDLE SECTION MEDIA QUERIES ================== */
 
 @media screen and (min-width: 768px) {
+  /* *************FEATURES SECTION**************** */
   #instructions {
     top: 10vh;
+  }
+
+  .instruction-set {
+    margin: 5% 0 0 0;
+  }
+
+  .instruction-card {
+    padding: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  /* *************FEATURES SECTION**************** */
   .instruction-set{
     grid-template-areas:
       "instruction1 instruction2"
       "instruction3 instruction4";
   }
 }
+
+/* ============================ BOTTOM SECTION ==================== */
