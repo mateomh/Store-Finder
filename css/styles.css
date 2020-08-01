@@ -263,7 +263,7 @@
     "instruction2 instruction2"
     "instruction3 instruction3"
     "instruction4 instruction4";
-  margin: 10% 0 0 0;
+  margin: 3% 0 0 0;
 }
 
 .instruction1 {
@@ -301,6 +301,7 @@
 }
 /* =========================== MIDDLE SECTION MEDIA QUERIES ================== */
 
+/* TABLET */
 @media screen and (min-width: 768px) {
   /* *************FEATURES SECTION**************** */
   #instructions {
@@ -316,6 +317,7 @@
   }
 }
 
+/* DESKTOP */
 @media screen and (min-width: 1024px) {
   /* *************FEATURES SECTION**************** */
   .instruction-set{
@@ -326,3 +328,71 @@
 }
 
 /* ============================ BOTTOM SECTION ==================== */
+
+#features {
+  position: relative;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.app-feature {
+  height: fit-content;
+  padding: 3% 1% 3% 1%;
+}
+
+.feature-content {
+  width: 70%;
+  margin: 3% auto;
+}
+
+.feature-image {
+  border-radius: 100%;
+  /* height: 90%; */
+  width: 30%;
+}
+
+.feature-1 {
+  background-color: var(--color1);
+}
+
+.feature-2 {
+  background-color: var(--color4);
+}
+
+.feature-3 {
+  background-color: var(--color3);
+}
+
+/* ============================ BOTTOM SECTION MEDIA QUERIES ================ */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  #features {
+    top: 10vh;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  
+  .app-feature {
+    padding-right: 10%;
+    padding-left: 5%;
+  }
+
+  .feature-content {
+    margin: 3% 0 0 0;
+    width: 50%;
+  }
+  
+  .feature-image {
+    float: right;
+    width: 20%;
+    height: 90%;
+    padding: auto 0;
+  }
+}
