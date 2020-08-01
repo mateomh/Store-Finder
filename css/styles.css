@@ -1,0 +1,98 @@
+:root {
+  --color1: #2b580c;
+  --color2: #639a67;
+  --color3: #d8ebb5;
+  --color4: #d9bf77;
+  --break-mobile: 768px;
+  --break-tablet: 1024px;
+}
+
+/* =================== GENERAL STYLES ===================== */
+
+.white {
+  color: white;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+/* =================== NAVBAR SECTION ===================== */
+
+.main-nav {
+  height: 160px;
+  width: 100%;
+  background-color: var(--color2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo-container {
+  width:100%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 35px;
+}
+
+.main-link:hover {
+  color: var(--color4);
+  text-decoration: none;
+}
+
+.menu-item {
+  display: none;
+}
+
+/* ======================= NAVBAR MEDIA QUERIES =============== */
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-nav {
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo-container{
+    width: fit-content;
+    text-align: left;
+  }
+
+  .menu {
+    width: 40%;
+    font-size: 30px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 300px;
+  }
+  
+  .main-nav {
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .logo-container{
+    width: fit-content;
+    text-align: left;
+  }
+  
+  .menu {
+    width: 40%;
+    font-size: 20px;
+  }
+
+  .menu-item {
+    display: inline;
+  }
+}
