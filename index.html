@@ -42,11 +42,15 @@
         <div class="main-search">
           <label for="store" class="bold">SEARCH BY NAME</label>
           <br>
-          <input type="text" name="store" class="search-input" placeholder="Find your store" />
-          <br class="hide">
-          <button type="button" class="search-button bold white">SEARCH</button>
+            <form action="http://google.com">
+              <input type="text" name="store" class="search-input" placeholder="Find your store" />
+              <br class="hide">
+              <button type="submit" class="search-button bold green-light">SEARCH</button>
+            </form>
         </div>
-        <button type="button" class="works-button green-med bold">HOW TO FIND A STORE</button>
+        <form action="#instructions">
+          <button type="submit" class="works-button green-med bold">HOW TO FIND A STORE</button>
+        </form>
       </div>
     </section>
     <!-- INSTRUCTIONS SECTION -->
@@ -56,54 +60,90 @@
         <div class="instruction-card instruction1">
           <img class="instruction-icon" src="./images/search.png" alt="search">
           <h1 class="instruction-title toasted bold">SEARCH</h1>
-          <p class="instruction-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo possimus fugiat hic, earum laudantium cupiditate provident? Sint explicabo ipsam blanditiis aspernatur. Nulla laudantium provident odio enim vel, deleniti veritatis?</p>
+          <p class="instruction-text">We have the biggest database on local bussinesses that deal with organic products and we bring it to the reach of your hands. Look for stores where you can find hand selected, best quality produce products.</p>
         </div>
         <div class="instruction-card instruction2">
           <img class="instruction-icon" src="./images/map.png" alt="map">
           <h1 class="instruction-title toasted bold">LOCATE</h1>
-          <p class="instruction-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo possimus fugiat hic, earum laudantium cupiditate provident? Sint explicabo ipsam blanditiis aspernatur. Nulla laudantium provident odio enim vel, deleniti veritatis?</p>
+          <p class="instruction-text">Our application allows you to find our partner stores through different search criteria, including location , name, type of products, proximity and others.</p>
         </div>
         <div class="instruction-card instruction3">
           <img class="instruction-icon" src="./images/business-card.png" alt="info">
           <h1 class="instruction-title toasted bold">GET THE INFO</h1>
-          <p class="instruction-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo possimus fugiat hic, earum laudantium cupiditate provident? Sint explicabo ipsam blanditiis aspernatur. Nulla laudantium provident odio enim vel, deleniti veritatis?</p>
+          <p class="instruction-text">Once you have found your prefered store we will give you all the information you need to make contact with it. If you want to get delivery you will have the number or the address in case you want to go there by yourself.</p>
         </div>
         <div class="instruction-card instruction4">
           <img class="instruction-icon" src="./images/shop.png" alt="shop">
           <h1 class="instruction-title toasted bold">START SHOPPING</h1>
-          <p class="instruction-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo possimus fugiat hic, earum laudantium cupiditate provident? Sint explicabo ipsam blanditiis aspernatur. Nulla laudantium provident odio enim vel, deleniti veritatis?</p>
+          <p class="instruction-text">After you decided how to get your groceries form the store, start shopping and let us know your experience not only with our application but with the stores themselves</p>
         </div>
       </div>
     </section>
     <!-- FEATURES SECTION -->
     <section id="features">
       <article class="app-feature feature-1">
-        <img class="feature-image" src="./images/map2.jpg" alt="feature1">
+        <a href="#"><img class="feature-image" src="./images/map2.jpg" alt="feature1"></a>
         <div class="feature-content">
-          <h1 class="feature-title toasted bold">START SHOPPING</h1>
-          <p class="feature-text green-med">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo possimus fugiat hic, earum laudantium cupiditate provident? Sint explicabo ipsam blanditiis aspernatur. Nulla laudantium provident odio enim vel, deleniti veritatis?</p>
+          <h1 class="feature-title toasted bold">LOCATIONS AROUND THE WORLD</h1>
+          <p class="feature-text green-med">We work really hard to get partners form around the world into our application. Right now we have more than 3000 partners in 80 countries and we never stop looking to give you the best chance to find one near you.</p>
         </div>
       </article>
       <article class="app-feature feature-2">
-        <img class="feature-image" src="./images/store9.jpg" alt="feature2">
+        <a href="#"><img class="feature-image" src="./images/store9.jpg" alt="feature2"></a>
         <div class="feature-content">
-          <h1 class="feature-title green-light bold">START SHOPPING</h1>
-          <p class="feature-text green-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo possimus fugiat hic, earum laudantium cupiditate provident? Sint explicabo ipsam blanditiis aspernatur. Nulla laudantium provident odio enim vel, deleniti veritatis?</p>
+          <h1 class="feature-title green-light bold">BIG AND UPDATED DATABASE</h1>
+          <p class="feature-text green-dark">Our database is updated constantly, not only by our partners themselves but by our own team that verifies the information regularly to ensure that when you find a store that meets your needs all the information you get is the actual information of the bussiness.</p>
         </div>
       </article>
       <article class="app-feature feature-3">
-        <img class="feature-image" src="./images/store2.jpg" alt="feature3">
+        <a href="#"><img class="feature-image" src="./images/store2.jpg" alt="feature3"></a>
         <div class="feature-content">
-          <h1 class="feature-title toasted bold">START SHOPPING</h1>
-          <p class="feature-text green-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo possimus fugiat hic, earum laudantium cupiditate provident? Sint explicabo ipsam blanditiis aspernatur. Nulla laudantium provident odio enim vel, deleniti veritatis?</p>
+          <h1 class="feature-title toasted bold">ALL THE INFORMATION IN ONE PLACE</h1>
+          <p class="feature-text green-light">With our application you get a lot of information about the store you selected. This infomation goes from the most basic one like address or telephone number to the more complex like directions to get there and products offered. Besides that our community will help you to know how good is the store with our review system that is embeded in the information you get.</p>
         </div>
       </article>
     </section>
-
   </main>
 
-  <footer>
-
+  <footer id="footer">
+    <!-- NAV BAR FOR THE FOOTER -->
+    <div class="footer-bar">
+      <div class="footer-bar-section social-section">
+        <a class="footer-bar-item toasted bold" href="#"><i class="fa fa-facebook" aria-hidden="true"></i> <span class="social-text">FACEBOOK</span></a>
+        <a class="footer-bar-item toasted bold" href="#"><i class="fa fa-twitter" aria-hidden="true"></i> <span class="social-text">TWITTER</span></a>
+        <a class="footer-bar-item toasted bold" href="#"><i class="fa fa-rss" aria-hidden="true"></i> <span class="social-text">BLOG</span></a>
+        <a class="footer-bar-item toasted bold" href="#"><i class="fa fa-opencart" aria-hidden="true"></i> <span class="social-text">OPEN CART</span></a>
+      </div>
+      <div class="footer-bar-section navigation-section">
+        <a class="footer-bar-item green-light bold" href="#">HOME</a>
+        <a class="footer-bar-item green-light bold" href="#">SEARCH</a>
+        <a class="footer-bar-item green-light bold" href="#">ABOUT US</a>
+        <a class="footer-bar-item green-light bold" href="#">ADVERTISE</a>
+      </div>
+    </div>
+    <!-- CONTACT AND MISC SECTION -->
+    <div class="card-deck mt-5 align-center">
+      <div class="card border-0">
+        <div class="card-body green-bg-dark">
+          <h5 class="card-title toasted bold">SUBSCRIBE</h5>
+          <input type="text" name="store" class="search-input" placeholder="Get news form your stores" />
+          <button type="submit" class="search-button subscribe-button bold green-light">SUBSCRIBE</button>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="card-body green-bg-dark">
+          <h5 class="card-title toasted bold">CONTACT</h5>
+          <p class="card-text green-med">Want to be a part of our community?<br><a class="footer-bar-item w-100 green-light" href="">info@freshfinder.com</a></p>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="card-body green-bg-dark">
+          <h5 class="card-title toasted bold">ABOUT</h5>
+          <p class="card-text green-med">Fresh Finder is an application that looks to help local and small bussinesses to increase their sales by connecting them with a larger community of people looking for more healthy food alternatives. If you want to know more <a class="footer-bar-item w-100 green-light" href="">Go Here</a></p>
+        </div>
+      </div>
+    </div>
+    <p class="green-med align-right bold pr-3 pt-5">&copy; 2020 M&m interactive</p>
   </footer>
   
 </body>

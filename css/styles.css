@@ -21,16 +21,36 @@
   color: var(--color3);
 }
 
+.green-bg-light {
+  background-color: var(--color3);
+}
+
 .green-dark {
   color: var(--color1);
+}
+
+.green-bg-dark {
+  background-color: var(--color1);
 }
 
 .green-med {
   color: var(--color2);
 }
 
+.green-bg-med {
+  background-color: var(--color2);
+}
+
 .align-left {
   text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
 }
 
 .bold {
@@ -364,7 +384,7 @@
 }
 
 .feature-3 {
-  background-color: var(--color3);
+  background-color: var(--color2);
 }
 
 /* ============================ BOTTOM SECTION MEDIA QUERIES ================ */
@@ -394,5 +414,98 @@
     width: 20%;
     height: 90%;
     padding: auto 0;
+  }
+}
+
+/* ============================ FOOTER SECTION =============================== */
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20vh;
+  height: fit-content;
+  background-color: var(--color1);
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.footer-bar-section {
+  width: 100%;
+  display: flex;
+  margin-top: 2%;
+  padding: 3% 0 2% 0;
+}
+
+.social-section {
+  order: 1;
+}
+
+.navigation-section {
+  order: 2;
+  border-top: 2px solid var(--color3);
+}
+
+.footer-bar-item {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+.footer-bar-item:hover {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.social-text {
+  display: none;
+}
+
+.card-deck {
+  display: none !important;
+}
+
+/* ============================ FOOTER SECTION MEDIA QUERIES ================== */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  #footer {
+    top: 10vh;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .footer-bar-section {
+    width: 50%;
+  }
+
+  .social-section {
+    order: 2;
+  }
+  
+  .navigation-section {
+    order: 1;
+    border: none;
+    border-right: 2px solid var(--color2);
+  }
+
+  .social-text {
+    display: inline;
+  }
+
+  .subscribe-button {
+    width: 40%;
+  }
+
+  .card-deck {
+    display: flex !important;
+    border-top: 2px solid var(--color2);
+    padding-top: 3%;
   }
 }
