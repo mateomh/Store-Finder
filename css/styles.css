@@ -418,11 +418,15 @@ for any other pallette of choice */
 }
 
 .result-item {
-  border: 2px solid var(--color2);
+  margin: 5% 0;
 }
 
-.result-link:hover {
-  text-decoration: none;
+.result-type1 {
+  background-color: var(--color1);
+}
+
+.result-type2 {
+  background-color: var(--color2);
 }
 
 .result-image {
@@ -454,6 +458,10 @@ for any other pallette of choice */
   #results {
     top: 10vh;
   }
+
+  .results-display {
+    width: 80%;
+  }
 }
 
 /* DESKTOP */
@@ -464,6 +472,29 @@ for any other pallette of choice */
       "instruction1 instruction2"
       "instruction3 instruction4";
   }
+
+  /* *****************RESULTS PAGE******************* */
+  .results-display {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .result-item {
+    width: 29%;
+    height: fit-content;
+  }
+
+  .result-image {
+    height: 30vh;
+  }
+  
+  /* .result-content {
+    height: 50%;
+  } */
 }
 
 /* ============================ BOTTOM SECTION ==================== */
