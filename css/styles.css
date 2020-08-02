@@ -1,75 +1,94 @@
+/* In this section we are setting the color pallette for the entire page so it can be easyly changed
+for any other pallette of choice */
 :root {
   --color1: #2b580c;
   --color2: #639a67;
   --color3: #d8ebb5;
   --color4: #d9bf77;
-  --break-mobile: 768px;
-  --break-tablet: 1024px;
 }
 
 /* =================== GENERAL STYLES ===================== */
+/* These are general styles for the whole document, the purpose is to give a consistant style through
+ the pages, so youwill find general text color and weights, background colors and images and 
+ in the media queries section you will find hidign and showing of elements depending on the size 
+ the important attibute is used mainly to overide some bootstrap styles*/
 
-.white {
+.white { /* makes the text white */
   color: white;
 }
 
-.toasted {
-  color: var(--color4);
+.toasted { /* gives a different text color (from the pallette) to a section */
+  color: var(--color4) !important;
 }
 
-.green-light {
-  color: var(--color3);
+.green-light { /* gives a lighter text color (from the pallette) to a section */
+  color: var(--color3) !important;
 }
 
-.green-bg-light {
-  background-color: var(--color3);
+.green-bg-light { /* gives a lighter background color (from the pallette) to a section */ 
+  background-color: var(--color3) !important;
 }
 
-.green-dark {
-  color: var(--color1);
+.green-dark { /* gives a darker text color (from the pallette) to a section */
+  color: var(--color1) !important;
 }
 
-.green-bg-dark {
-  background-color: var(--color1);
+.green-bg-dark { /* gives a darker background color (from the pallette) to a section */ 
+  background-color: var(--color1) !important;
 }
 
-.green-med {
-  color: var(--color2);
+.green-med { /* gives a medium text color (from the pallette) to a section */
+  color: var(--color2) !important;
 }
 
-.green-bg-med {
-  background-color: var(--color2);
+.green-bg-med { /* gives a medium background color (from the pallette) to a section */ 
+  background-color: var(--color2) !important;
 }
 
-.align-left {
+.align-left { /* aligns the text to the left */
   text-align: left;
 }
 
-.align-center {
+.align-center { /* aligns the text to the center */ 
   text-align: center;
 }
 
-.align-right {
+.align-right { /* aligns the text to the right */
   text-align: right;
 }
 
-.bold {
-  font-weight: bolder;
+.bold { /* makes the text bold */
+  font-weight: bolder !important;
 }
 
-.banner-image-1 {
+.banner-image-1 { /* makes a background image for a section */
   background-image: url(../images/store7.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.banner-image-2 {
-  background-image: url(../images/clerk2.jpg);
+.banner-image-2 { /* makes a background image for a section */
+  background-image: url(../images/map1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (min-width: 768px) {
+  .hide-med { /* Hides elements from the tablet size upwards */
+    display: none;
+  }
+
+  .show-block-med { /* Shows block elements from tablet size upwards */
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
 
 /* =================== NAVBAR SECTION ===================== */
 
@@ -207,6 +226,34 @@
   border: 1px solid var(--color1);
 }
 
+/* *****************RESULTS PAGE******************* */
+#filters {
+  position: relative;
+  top: 20vh;
+  width: 100%;
+  height: 30vh;
+  padding: 10% 0 0 0;
+}
+
+.filters-text {
+  padding: 5%;
+}
+
+.filter-button {
+  padding: 0 5% 0 5%;
+}
+
+.filter-button:hover {
+  color: var(--color3);
+}
+
+.filters-menu {
+  display: none;
+}
+
+.filter-item {
+}
+
 /* ======================= TOP SECTION MEDIA QUERIES ===================== */
 
 /* TABLET */
@@ -250,6 +297,24 @@
   .hide {
     display: none;
   }
+
+  /* *****************RESULTS PAGE******************* */
+  #filters {
+    top: 10vh;
+    padding: 3% 0 3% 0;
+  }
+
+  .filters-text {
+    padding: 3% 0 3% 0 !important;
+    height: fit-content;
+  }
+
+  .filters-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3%;
+  }
 }
 
 /* DESKTOP */
@@ -264,6 +329,17 @@
     height: 20vh;
     padding-top: 5%;
     margin: 12% 0 0 0;
+  }
+
+  /* *****************RESULTS PAGE******************* */
+  #filters {
+    top: 10vh;
+    padding: 1% 0 1% 0;
+  }
+
+  .filters-text {
+    padding: 3% 0 3% 0 !important;
+    height: fit-content;
   }
 }
 
@@ -322,6 +398,16 @@
 .instruction-text {
   margin: 2%;
 }
+
+/* *****************RESULTS PAGE******************* */
+#results {
+  position: relative;
+  top: 20vh;
+  background-color: var(--color3);
+  text-align: center;
+  padding: 5% 1% 5% 1%;
+}
+
 /* =========================== MIDDLE SECTION MEDIA QUERIES ================== */
 
 /* TABLET */
