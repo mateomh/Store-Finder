@@ -408,6 +408,31 @@ for any other pallette of choice */
   padding: 5% 1% 5% 1%;
 }
 
+.results-display {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 3% auto;
+  padding: 5%;
+}
+
+.result-item {
+  border: 2px solid var(--color2);
+}
+
+.result-link:hover {
+  text-decoration: none;
+}
+
+.result-image {
+  width: 100%;
+}
+
+.result-content {
+  padding: 5%;
+}
+
 /* =========================== MIDDLE SECTION MEDIA QUERIES ================== */
 
 /* TABLET */
@@ -423,6 +448,11 @@ for any other pallette of choice */
 
   .instruction-card {
     padding: 0;
+  }
+
+  /* *****************RESULTS PAGE******************* */
+  #results {
+    top: 10vh;
   }
 }
 
