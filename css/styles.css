@@ -13,7 +13,11 @@ for any other pallette of choice */
 /* These are general styles for the whole document, the purpose is to give a consistant style through
  the pages, so youwill find general text color and weights, background colors and images and 
  in the media queries section you will find hidign and showing of elements depending on the size 
- the important attibute is used mainly to overide some bootstrap styles*/
+ the important attibute is used mainly to overide some bootstrap styles */
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
 
 .white { /* makes the text white */
   color: white;
