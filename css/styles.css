@@ -260,6 +260,26 @@ for any other pallette of choice */
   display: none;
 }
 
+.drop-filters {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  z-index: 1;
+  line-height: 1.5;
+}
+
+.drop-link {
+  display: block;
+}
+
+.drop-filters:hover .drop-content {display: block;}
+
 /* ********************************* INFO PAGE *************************** */
 #info {
   position: relative;

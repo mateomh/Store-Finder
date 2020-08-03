@@ -39,7 +39,21 @@
   <main>
     <section id="filters" class="banner-image-2">
       <div class ="banner-text filters-text">
-        <h3 class="toasted bold">FILTER YOUR RESULTS <a class="filter-button green-med hide-med" href=""><i class="fa fa-plus fa-1x" aria-hidden="true"></i></a></h3>
+        <!-- Drop down menu when it hovers in the mobile size -->
+        <h3 class="toasted bold">
+          FILTER YOUR RESULTS
+          <a class="filter-button green-med hide-med" href="">
+            <div class="drop-filters">
+              <i class="fa fa-plus fa-1x" aria-hidden="true"></i>
+              <div class="drop-content green-bg-dark ">
+                <a class="drop-link toasted" href="#">City</a>
+                <a class="drop-link toasted" href="#">Distance</a>
+                <a class="drop-link toasted" href="#">Rating</a>
+                <a class="drop-link toasted" href="#">Type</a>
+              </div>
+            </div>
+          </a>
+        </h3>
         <div class="filters-menu">
           <div class="filter-item">
             <div class="dropdown">
@@ -56,7 +70,7 @@
           <div class="filter-item">
             <div class="dropdown">
               <button class="btn btn-lg green-bg-dark toasted bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                RADIUS
+                DISTANCE
               </button>
               <div class="dropdown-menu green-bg-dark" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item toasted bold" href="#">1 Km</a>
