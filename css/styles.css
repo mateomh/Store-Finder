@@ -77,6 +77,8 @@ for any other pallette of choice */
   background-size: cover;
 }
 
+/* ====================== GENERAL STYLES MEDIA QUERIES ===================== */
+
 @media screen and (min-width: 768px) {
   .hide-med { /* Hides elements from the tablet size upwards */
     display: none;
@@ -88,10 +90,7 @@ for any other pallette of choice */
 }
 
 @media screen and (min-width: 1024px) {
-  /* body {
-    width: 80%;
-    margin: 0 auto;
-  } */
+
 }
 
 
@@ -260,12 +259,13 @@ for any other pallette of choice */
   display: none;
 }
 
-.drop-filters {
+/* HOVER DROPDOWN MENU */
+.drop-filters { /* Sets the position relative for the content to be contained in the same spot when showed */
   position: relative;
   display: inline-block;
 }
 
-.drop-content {
+.drop-content { /* Hides the content until hovered over */
   display: none;
   position: absolute;
   right: 0;
@@ -278,7 +278,7 @@ for any other pallette of choice */
   display: block;
 }
 
-.drop-filters:hover .drop-content {display: block;}
+.drop-filters:hover .drop-content {display: block;} /* Displays the content when it is hovered over */
 
 /* ********************************* INFO PAGE *************************** */
 #info {
