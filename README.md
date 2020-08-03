@@ -18,7 +18,7 @@ This project was created as a Capstone project for the HTML/CSS module in the Mi
 
 ## Live Demo
 
-[Live Demo Link](https://https://raw.githack.com/mateomh/Store-Finder/store-finder-page/index.html)
+[FRESH FINDER Live Demo](https://raw.githack.com/mateomh/Store-Finder/store-finder-page/index.html)
 
 
 ## Author
@@ -51,7 +51,8 @@ Give a ⭐️ if you like this project!
 
 The images and some of the icons used on this page have authors that deserve credit for creating them. The following are the different authors that contributed in some way in the creation of this page:
 
-###Photos:
+### Photos:
+
 [Mehrad Vosoughi](https://unsplash.com/@mehrad_vosoughi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/supermarket?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
 [nrd](https://unsplash.com/@nicotitto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/supermarket?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
@@ -80,7 +81,8 @@ The images and some of the icons used on this page have authors that deserve cre
 
 [Mehrad Vosoughi](https://unsplash.com/@mehrad_vosoughi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/supermarket?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
-###Icons
+### Icons
+
 [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/" title="Flaticon)
 
 [surang](https://www.flaticon.com/free-icon/placeholder_2942917) from [www.flaticon.com](https://www.flaticon.com/" title="Flaticon)
