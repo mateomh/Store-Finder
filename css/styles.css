@@ -88,7 +88,10 @@ for any other pallette of choice */
 }
 
 @media screen and (min-width: 1024px) {
-
+  /* body {
+    width: 80%;
+    margin: 0 auto;
+  } */
 }
 
 
@@ -142,7 +145,12 @@ for any other pallette of choice */
 
   .logo-container{
     width: fit-content;
+    height: 10vh;
     text-align: left;
+  }
+
+  .logo {
+    width: 80%;
   }
 
   .menu {
@@ -154,18 +162,13 @@ for any other pallette of choice */
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
   .logo {
-    width: 300px;
+    width: 100%;
   }
   
   .main-nav {
     justify-content: space-between;
   }
-  
-  .logo-container{
-    width: fit-content;
-    text-align: left;
-  }
-  
+
   .menu {
     width: 40%;
     font-size: 20px;
