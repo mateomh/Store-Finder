@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# FRESH FINDER
+# FRESH FINDER - Grocery store finder
 
 > This website was created to help local grocery stores expand their client base by getting their information posted online.
 
 ![screenshot](./app_screenshot.png)
 
-The is a responsive application for all the screen sizes, that has a search bar where you can look for your grocery store by name and filter the results by different criteria. Once you find the store you can get a brief description of the business, their contact information, the revies provided by other users, nad finally directions to get there.
+The is a responsive application for all the screen sizes, that has a search bar where you can look for your grocery store by name and filter the results by different criteria. Once you find the store you can get a brief description of the business, their contact information, the reviews provided by other users, and finally directions to get there.
 
 This project was created as a Capstone project for the HTML/CSS module in the Mircoverse curriculum
 
@@ -21,13 +21,7 @@ This project was created as a Capstone project for the HTML/CSS module in the Mi
 [Live Demo Link](https://https://raw.githack.com/mateomh/Store-Finder/store-finder-page/index.html)
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-## Authors
+## Author
 
 👤 **Mateo mojica**
 
@@ -55,7 +49,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-The images and some of the icons used in this page have authors that deserve credit for creating them. The following are the different authors that contributed in some way in the creation of this page:
+The images and some of the icons used on this page have authors that deserve credit for creating them. The following are the different authors that contributed in some way in the creation of this page:
 
 ###Photos:
 [Mehrad Vosoughi](https://unsplash.com/@mehrad_vosoughi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/supermarket?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
