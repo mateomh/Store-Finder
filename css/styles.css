@@ -7,7 +7,9 @@ for any other pallette of choice */
   --color4: #d9bf77;
 }
 
-/* =================== GENERAL STYLES ===================== */
+/* ======================================================== */
+/* |                   GENERAL STYLES                     | */
+/* ======================================================== */
 /* These are general styles for the whole document, the purpose is to give a consistant style through
  the pages, so youwill find general text color and weights, background colors and images and 
  in the media queries section you will find hidign and showing of elements depending on the size 
@@ -90,7 +92,9 @@ for any other pallette of choice */
 }
 
 
-/* =================== NAVBAR SECTION ===================== */
+/* ======================================================== */
+/* |                   NAVBAR SECTION                     | */
+/* ======================================================== */
 
 .main-nav {
   height: 20vh;
@@ -172,7 +176,9 @@ for any other pallette of choice */
   }
 }
 
-/* ======================== TOP SECTION ====================== */
+/* =========================================================== */
+/* |                      TOP SECTION                        | */
+/* =========================================================== */
 
 /* *****************SEARCH PAGE******************* */
 .top-banner {
@@ -251,7 +257,50 @@ for any other pallette of choice */
   display: none;
 }
 
-.filter-item {
+/* ********************************* INFO PAGE *************************** */
+#info {
+  position: relative;
+  top: 20vh;
+  background-color: var(--color3);
+}
+
+.info-card {
+  padding: 3%;;
+}
+
+.info-image {
+  width: 100%;
+}
+
+.info-content {
+  padding-top: 3%;
+}
+
+.contact-info {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-top: 2px solid var(--color4);
+}
+
+.contact-review {
+  border-top: 2px solid  var(--color1);
+  padding-top: 10%;
+}
+
+.contact-review-text {
+  padding: 3%;
+  border: 2px dashed var(--color4);
+  margin-top: 3%;
+}
+
+.info-directions {
+  margin-top: 10%;
+}
+
+.info-map {
+  width: 100%;
+  height: 50vh;
+  padding: 3%;
 }
 
 /* ======================= TOP SECTION MEDIA QUERIES ===================== */
@@ -315,6 +364,21 @@ for any other pallette of choice */
     justify-content: space-around;
     margin-top: 3%;
   }
+
+  /* **************** INFO PAGE *********************** */
+  #info {
+    top: 10vh;
+  }
+
+  .contact-review {
+    padding-top: 3%;
+  }
+  
+  .contact-review-text {
+    padding: 3%;
+    border: 2px dashed var(--color4);
+    margin-top: 3%;
+  }
 }
 
 /* DESKTOP */
@@ -341,9 +405,43 @@ for any other pallette of choice */
     padding: 3% 0 3% 0 !important;
     height: fit-content;
   }
+
+  /* **************** INFO PAGE ******************** */
+  .info-card {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .info-image {
+    width: 50%;
+  }
+  
+  .info-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .contact-description {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .contact-info{
+    width: 30%;
+    margin-right: 2%;
+  }
+
+  .contact-review {
+    width: 68%;
+  }
+  .info-directions {
+    margin-top: 5%;
+  }
 }
 
-/* =========================== MIDDLE SECTION ================= */
+/* ============================================================ */
+/* |                       MIDDLE SECTION                     | */
+/* ============================================================ */
 
 /* *****************SEARCH PAGE******************* */
 #instructions {
@@ -497,7 +595,9 @@ for any other pallette of choice */
   } */
 }
 
-/* ============================ BOTTOM SECTION ==================== */
+/* ================================================================ */
+/* |                         BOTTOM SECTION                       | */
+/* ================================================================ */
 
 /* *****************SEARCH PAGE******************* */
 #features {
@@ -569,7 +669,9 @@ for any other pallette of choice */
   }
 }
 
-/* ============================ FOOTER SECTION =============================== */
+/* =========================================================================== */
+/* |                            FOOTER SECTION                               | */
+/* =========================================================================== */
 
 #footer {
   display: flex;
