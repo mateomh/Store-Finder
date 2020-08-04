@@ -205,7 +205,7 @@ h6 {
   height: 80vh;
   position: relative;
   top: 20vh;
-  padding-top: 7%;
+  padding-top: 10%;
 }
 
 .banner-text {
@@ -222,7 +222,7 @@ h6 {
   background-color: rgb(200, 200, 200, 0.7);
   border-radius: 5px;
   padding: 4%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .search-input {
@@ -231,7 +231,7 @@ h6 {
   border-radius: 5px;
   height: 5vh;
   padding-left: 3%;
-  border: 1px solid var(--color1);
+  border: none;
 }
 
 .search-button {
@@ -240,7 +240,7 @@ h6 {
   margin: 5% 0 1% 0;
   background-color: var(--color2);
   border-radius: 5px;
-  border: 1px solid var(--color1);
+  border: none;
 }
 
 .works-button {
@@ -349,22 +349,22 @@ h6 {
 @media screen and (min-width: 768px) {
   /* *****************SEARCH PAGE******************* */
   .top-banner {
-    height: 60vh;
+    height: fit-content;
     top: 10vh;
-    padding-top: 1%;
+    padding: 1%;;
   }
 
   .banner-text {
     width: 80%;
-    height: 90%;
+    height: fit-content;
     background-color: rgb(0, 0, 0, 0.5);
     padding: 7% 1% 1% 1%;
   }
 
   .main-search {
-    height: 20vh;
+    height: fit-content;
     padding-top: 5%;
-    margin: 7% 0 0 0;
+    margin: 2vh 0 0 0;
   }
 
   .search-input {
