@@ -83,14 +83,14 @@ The images and some of the icons used on this page have authors that deserve cre
 
 ### Icons
 
-[Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/" title="Flaticon)
+[Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
 
-[surang](https://www.flaticon.com/free-icon/placeholder_2942917) from [www.flaticon.com](https://www.flaticon.com/" title="Flaticon)
+[surang](https://www.flaticon.com/free-icon/placeholder_2942917) from [www.flaticon.com](https://www.flaticon.com/)
 
-[Kiranshastry](https://www.flaticon.com/authors/kiranshastry) from [www.flaticon.com](https://www.flaticon.com/" title="Flaticon)
+[Kiranshastry](https://www.flaticon.com/authors/kiranshastry) from [www.flaticon.com](https://www.flaticon.com/)
 
-[Prosymbols](https://www.flaticon.com/authors/prosymbols) from [www.flaticon.com](https://www.flaticon.com/" title="Flaticon)
+[Prosymbols](https://www.flaticon.com/authors/prosymbols) from [www.flaticon.com](https://www.flaticon.com/)
 
-[iconixar](https://www.flaticon.com/authors/iconixar) from [www.flaticon.com](https://www.flaticon.com/" title="Flaticon)
+[iconixar](https://www.flaticon.com/authors/iconixar) from [www.flaticon.com](https://www.flaticon.com/)
 
 This project is [MIT](lic.url) licensed.
