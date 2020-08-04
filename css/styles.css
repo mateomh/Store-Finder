@@ -18,6 +18,10 @@ for any other pallette of choice */
  in the media queries section you will find hidign and showing of elements depending on the size
  the important attibute is used mainly to overide some bootstrap styles */
 
+main {
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -124,6 +128,11 @@ h6 {
 
 .logo-container {
   width: 100%;
+  padding-right: 3%;
+}
+
+.logo {
+  width: 98%;
 }
 
 .menu {
@@ -749,7 +758,7 @@ h6 {
 
 .footer-bar-item {
   display: inline-block;
-  width: 25%;
+  width: 23%;
   text-align: center;
 }
 
