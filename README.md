@@ -6,7 +6,7 @@
 
 ![screenshot](./app_screenshot.png)
 
-The is a responsive application for all the screen sizes, that has a search bar where you can look for your grocery store by name and filter the results by different criteria. Once you find the store you can get a brief description of the business, their contact information, the reviews provided by other users, and finally directions to get there.
+The is a responsive site for all the screen sizes, that has a search bar where you can look for your grocery store by name and filter the results by different criteria. Once you find the store you can get a brief description of the business, their contact information, the reviews provided by other users, and finally directions to get there.
 
 This project was created as a Capstone project for the HTML/CSS module in the Mircoverse curriculum
 
