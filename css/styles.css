@@ -1,0 +1,810 @@
+/* In this section we are setting the color pallette for the entire page so it can be easyly changed
+for any other pallette of choice */
+:root {
+  --color1: #000;
+  --color2: #e97171;
+  --color3: #ffcb8e;
+  --color4: #f5efef;
+}
+
+/* ======================================================== */
+
+/* |                   GENERAL STYLES                     | */
+
+/* ======================================================== */
+
+/* These are general styles for the whole document, the purpose is to give a consistant style through
+ the pages, so youwill find general text color and weights, background colors and images and
+ in the media queries section you will find hidign and showing of elements depending on the size
+ the important attibute is used mainly to overide some bootstrap styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.white { /* makes the text white */
+  color: white;
+}
+
+.toasted { /* gives a different text color (from the pallette) to a section */
+  color: var(--color4) !important;
+}
+
+.green-light { /* gives a lighter text color (from the pallette) to a section */
+  color: var(--color3) !important;
+}
+
+.green-bg-light { /* gives a lighter background color (from the pallette) to a section */
+  background-color: var(--color3) !important;
+}
+
+.green-dark { /* gives a darker text color (from the pallette) to a section */
+  color: var(--color1) !important;
+}
+
+.green-bg-dark { /* gives a darker background color (from the pallette) to a section */
+  background-color: var(--color1) !important;
+}
+
+.green-med { /* gives a medium text color (from the pallette) to a section */
+  color: var(--color2) !important;
+}
+
+.green-bg-med { /* gives a medium background color (from the pallette) to a section */
+  background-color: var(--color2) !important;
+}
+
+.align-left { /* aligns the text to the left */
+  text-align: left;
+}
+
+.align-center { /* aligns the text to the center */
+  text-align: center;
+}
+
+.align-right { /* aligns the text to the right */
+  text-align: right;
+}
+
+.bold { /* makes the text bold */
+  font-weight: bolder !important;
+}
+
+.banner-image-1 { /* makes a background image for a section */
+  background-image: url(../images/store7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-image-2 { /* makes a background image for a section */
+  background-image: url(../images/map1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ====================== GENERAL STYLES MEDIA QUERIES ===================== */
+
+@media screen and (min-width: 768px) {
+  .hide-med { /* Hides elements from the tablet size upwards */
+    display: none;
+  }
+
+  .show-block-med { /* Shows block elements from tablet size upwards */
+    display: block;
+  }
+}
+
+/* ======================================================== */
+
+/* |                   NAVBAR SECTION                     | */
+
+/* ======================================================== */
+
+.main-nav {
+  height: 20vh;
+  width: 100%;
+  background-color: var(--color2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  width: 100%;
+  padding-right: 3%;
+}
+
+.logo {
+  width: 60%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 35px;
+}
+
+.main-link:hover {
+  color: var(--color4);
+  text-decoration: none;
+}
+
+.menu-item {
+  display: none;
+}
+
+/* ======================= NAVBAR MEDIA QUERIES =============== */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .main-nav {
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    width: fit-content;
+    height: 10vh;
+    text-align: left;
+  }
+
+  .logo {
+    width: 30vh;
+  }
+
+  .menu {
+    width: 40%;
+    font-size: 30px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .main-nav {
+    justify-content: space-between;
+  }
+
+  .menu {
+    width: 40%;
+    font-size: 20px;
+  }
+
+  .menu-item {
+    display: inline;
+  }
+}
+
+/* =========================================================== */
+
+/* |                      TOP SECTION                        | */
+
+/* =========================================================== */
+
+/* *****************SEARCH PAGE******************* */
+.top-banner {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  top: 20vh;
+  padding-top: 10%;
+}
+
+.banner-text {
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  width: 90%;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.main-search {
+  height: fit-content;
+  background-color: rgb(200, 200, 200, 0.7);
+  border-radius: 5px;
+  padding: 4%;
+  margin-top: 5%;
+}
+
+.search-input {
+  width: 100%;
+  margin: 0 0 1% 0;
+  border-radius: 5px;
+  height: 5vh;
+  padding-left: 3%;
+  border: none;
+}
+
+.search-button {
+  width: 100%;
+  height: 8vh;
+  margin: 5% 0 1% 0;
+  background-color: var(--color2);
+  border-radius: 5px;
+  border: none;
+}
+
+.works-button {
+  height: 8vh;
+  margin: 5% 0 0 0;
+  border-radius: 5px;
+  background-color: var(--color3);
+  border: 1px solid var(--color1);
+}
+
+/* *****************RESULTS PAGE******************* */
+#filters {
+  position: relative;
+  top: 20vh;
+  width: 100%;
+  height: fit-content;
+  padding: 5% 0 5% 0;
+}
+
+.filters-text {
+  padding: 5%;
+}
+
+.filter-button {
+  padding: 0 5% 0 5%;
+}
+
+.filter-button:hover {
+  color: var(--color3);
+}
+
+.filters-menu {
+  display: none;
+}
+
+/* HOVER DROPDOWN MENU */
+.drop-filters { /* Sets the position relative for the content to be contained in the same spot when showed */
+  position: relative;
+  display: inline-block;
+}
+
+.drop-content { /* Hides the content until hovered over */
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  z-index: 1;
+  line-height: 1.5;
+}
+
+.drop-link {
+  display: block;
+}
+
+.drop-filters:hover .drop-content { display: block; } /* Displays the content when it is hovered over */
+
+/* ********************************* INFO PAGE *************************** */
+#info {
+  position: relative;
+  top: 20vh;
+  background-color: var(--color4);
+}
+
+.info-card {
+  padding: 3%;
+}
+
+.info-image {
+  width: 100%;
+}
+
+.info-content {
+  padding-top: 3%;
+}
+
+.contact-info {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-top: 2px solid var(--color2);
+}
+
+.contact-review {
+  border-top: 2px solid  var(--color1);
+  padding-top: 10%;
+}
+
+.contact-review-text {
+  padding: 3%;
+  border: 2px dashed var(--color3);
+  margin-top: 3%;
+}
+
+.info-directions {
+  margin-top: 10%;
+}
+
+.info-map {
+  width: 100%;
+  height: 50vh;
+  padding: 3%;
+}
+
+/* ======================= TOP SECTION MEDIA QUERIES ===================== */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  /* *****************SEARCH PAGE******************* */
+  .top-banner {
+    height: fit-content;
+    top: 10vh;
+    padding: 1%;
+  }
+
+  .banner-text {
+    width: 80%;
+    height: fit-content;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 7% 1% 1% 1%;
+  }
+
+  .main-search {
+    height: fit-content;
+    padding-top: 5%;
+    margin: 2vh 0 0 0;
+  }
+
+  .search-input {
+    margin: 0;
+    width: 50%;
+  }
+
+  .search-button {
+    margin: 0;
+    width: 20%;
+    height: 5vh;
+  }
+
+  .works-button {
+    display: none;
+    margin: 0;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  /* *****************RESULTS PAGE******************* */
+  #filters {
+    top: 10vh;
+    height: fit-content;
+    padding: 3% 0 3% 0;
+  }
+
+  .filters-text {
+    padding: 3% 0 3% 0 !important;
+    height: fit-content;
+  }
+
+  .filters-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3%;
+  }
+
+  /* **************** INFO PAGE *********************** */
+  #info {
+    top: 10vh;
+  }
+
+  .contact-review {
+    padding-top: 3%;
+  }
+
+  .contact-review-text {
+    padding: 3%;
+    margin-top: 3%;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  /* *****************SEARCH PAGE******************* */
+  .banner-text {
+    width: 50%;
+    padding: 3% 1% 1% 1%;
+  }
+
+  .main-search {
+    height: 20vh;
+    padding-top: 5%;
+    margin: 12% 0 0 0;
+  }
+
+  /* *****************RESULTS PAGE******************* */
+  #filters {
+    top: 10vh;
+    padding: 1% 0 1% 0;
+  }
+
+  .filters-text {
+    padding: 2% 0 2% 0 !important;
+    height: fit-content;
+    width: 65%;
+  }
+
+  /* **************** INFO PAGE ******************** */
+  .info-card {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .info-image {
+    width: 50%;
+  }
+
+  .info-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .contact-description {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .contact-info {
+    width: 30%;
+    margin-right: 2%;
+  }
+
+  .contact-review {
+    width: 68%;
+  }
+
+  .info-directions {
+    margin-top: 5%;
+  }
+}
+
+/* ============================================================ */
+
+/* |                       MIDDLE SECTION                     | */
+
+/* ============================================================ */
+
+/* *****************SEARCH PAGE******************* */
+#instructions {
+  position: relative;
+  top: 20vh;
+  background-color: var(--color4);
+  text-align: center;
+  padding: 5% 1% 5% 1%;
+}
+
+.instruction-set {
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "instruction1 instruction1"
+    "instruction2 instruction2"
+    "instruction3 instruction3"
+    "instruction4 instruction4";
+  margin: 3% 0 0 0;
+}
+
+.instruction1 {
+  grid-area: instruction1;
+}
+
+.instruction2 {
+  grid-area: instruction2;
+}
+
+.instruction3 {
+  grid-area: instruction3;
+}
+
+.instruction4 {
+  grid-area: instruction4;
+}
+
+.instruction-card {
+  padding: 10%;
+}
+
+.instruction-icon {
+  height: 80px;
+  width: 80px;
+  margin: 3%;
+}
+
+.instruction-title {
+  margin: 2%;
+}
+
+.instruction-text {
+  margin: 2%;
+}
+
+/* *****************RESULTS PAGE******************* */
+#results {
+  position: relative;
+  top: 20vh;
+  background-color: var(--color4);
+  text-align: center;
+  padding: 5% 1% 5% 1%;
+}
+
+.results-display {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 3% auto;
+  padding: 5%;
+}
+
+.result-item {
+  margin: 5% 0;
+}
+
+.result-type1 {
+  background-color: var(--color1);
+}
+
+.result-type2 {
+  background-color: var(--color2);
+}
+
+.result-image {
+  width: 100%;
+}
+
+.result-content {
+  padding: 5%;
+}
+
+/* =========================== MIDDLE SECTION MEDIA QUERIES ================== */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  /* *****************SEARCH PAGE******************* */
+  #instructions {
+    top: 10vh;
+  }
+
+  .instruction-set {
+    margin: 5% 0 0 0;
+  }
+
+  .instruction-card {
+    padding: 0;
+  }
+
+  /* *****************RESULTS PAGE******************* */
+  #results {
+    top: 10vh;
+  }
+
+  .results-display {
+    width: 80%;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  /* *****************SEARCH PAGE******************* */
+  .instruction-set {
+    grid-template-areas:
+      "instruction1 instruction2"
+      "instruction3 instruction4";
+  }
+
+  /* *****************RESULTS PAGE******************* */
+  .results-display {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .result-item {
+    width: 29%;
+  }
+
+  .result-image {
+    height: 30vh;
+  }
+}
+
+/* ================================================================ */
+
+/* |                         BOTTOM SECTION                       | */
+
+/* ================================================================ */
+
+/* *****************SEARCH PAGE******************* */
+#features {
+  position: relative;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.features-header {
+  margin: 0;
+  background-color: var(--color4);
+  padding: 3%;
+}
+
+.app-feature {
+  height: fit-content;
+  padding: 3% 1% 3% 1%;
+}
+
+.feature-content {
+  width: 70%;
+  margin: 3% auto;
+}
+
+.feature-image {
+  border-radius: 100%;
+  width: 30%;
+}
+
+.feature-1 {
+  background-color: var(--color1);
+}
+
+.feature-2 {
+  background-color: var(--color4);
+}
+
+.feature-3 {
+  background-color: var(--color2);
+}
+
+/* ============================ BOTTOM SECTION MEDIA QUERIES ================ */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  /* *****************SEARCH PAGE******************* */
+  #features {
+    top: 10vh;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  /* *****************SEARCH PAGE******************* */
+  .app-feature {
+    padding-right: 10%;
+    padding-left: 5%;
+  }
+
+  .feature-content {
+    margin: 3% 0 0 0;
+    width: 50%;
+  }
+
+  .feature-image {
+    float: right;
+    width: 20%;
+    height: 90%;
+  }
+}
+
+/* =========================================================================== */
+
+/* |                            FOOTER SECTION                               | */
+
+/* =========================================================================== */
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20vh;
+  height: fit-content;
+  background-color: var(--color1);
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.footer-bar-section {
+  width: 100%;
+  display: flex;
+  margin-top: 2%;
+  padding: 3% 0 2% 0;
+}
+
+.social-section {
+  order: 1;
+}
+
+.navigation-section {
+  order: 2;
+  border-top: 2px solid var(--color3);
+}
+
+.footer-bar-item {
+  display: inline-block;
+  width: 23%;
+  text-align: center;
+}
+
+.footer-bar-item:hover {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.social-text {
+  display: none;
+}
+
+.card-deck {
+  display: none !important;
+}
+
+/* ============================ FOOTER SECTION MEDIA QUERIES ================== */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  #footer {
+    top: 10vh;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .footer-bar-section {
+    width: 50%;
+  }
+
+  .social-section {
+    order: 2;
+  }
+
+  .navigation-section {
+    order: 1;
+    border: none;
+    border-right: 2px solid var(--color2);
+  }
+
+  .social-text {
+    display: inline;
+  }
+
+  .subscribe-button {
+    width: 40%;
+  }
+
+  .card-deck {
+    display: flex !important;
+    border-top: 2px solid var(--color2);
+    padding-top: 3%;
+  }
+}
