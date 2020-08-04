@@ -1,10 +1,10 @@
 /* In this section we are setting the color pallette for the entire page so it can be easyly changed
 for any other pallette of choice */
 :root {
-  --color1: #2b580c;
-  --color2: #639a67;
-  --color3: #d8ebb5;
-  --color4: #d9bf77;
+  --color1: #000;
+  --color2: #e97171;
+  --color3: #ffcb8e;
+  --color4: #f5efef;
 }
 
 /* ======================================================== */
@@ -296,7 +296,7 @@ h6 {
 #info {
   position: relative;
   top: 20vh;
-  background-color: var(--color3);
+  background-color: var(--color4);
 }
 
 .info-card {
@@ -314,7 +314,7 @@ h6 {
 .contact-info {
   padding-top: 5%;
   padding-bottom: 5%;
-  border-top: 2px solid var(--color4);
+  border-top: 2px solid var(--color2);
 }
 
 .contact-review {
@@ -324,7 +324,7 @@ h6 {
 
 .contact-review-text {
   padding: 3%;
-  border: 2px dashed var(--color4);
+  border: 2px dashed var(--color3);
   margin-top: 3%;
 }
 
@@ -411,7 +411,6 @@ h6 {
 
   .contact-review-text {
     padding: 3%;
-    border: 2px dashed var(--color4);
     margin-top: 3%;
   }
 }
@@ -486,7 +485,7 @@ h6 {
 #instructions {
   position: relative;
   top: 20vh;
-  background-color: var(--color3);
+  background-color: var(--color4);
   text-align: center;
   padding: 5% 1% 5% 1%;
 }
@@ -541,7 +540,7 @@ h6 {
 #results {
   position: relative;
   top: 20vh;
-  background-color: var(--color3);
+  background-color: var(--color4);
   text-align: center;
   padding: 5% 1% 5% 1%;
 }
@@ -628,10 +627,6 @@ h6 {
   .result-image {
     height: 30vh;
   }
-
-  /* .result-content {
-    height: 50%;
-  } */
 }
 
 /* ================================================================ */
