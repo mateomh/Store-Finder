@@ -132,7 +132,7 @@ h6 {
 }
 
 .logo {
-  width: 98%;
+  width: 60%;
 }
 
 .menu {
@@ -168,7 +168,7 @@ h6 {
   }
 
   .logo {
-    width: 80%;
+    width: 30vh;
   }
 
   .menu {
@@ -179,10 +179,6 @@ h6 {
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
-  .logo {
-    width: 100%;
-  }
-
   .main-nav {
     justify-content: space-between;
   }
