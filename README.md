@@ -8,6 +8,8 @@
 
 The is a responsive site for all the screen sizes, that has a search bar where you can look for your grocery store by name and filter the results by different criteria. Once you find the store you can get a brief description of the business, their contact information, the reviews provided by other users, and finally directions to get there.
 
+The website is designed as template, so you will be able to change the color scheme and the contents in a fast way, so it can showcase any type of business that will need it. It was built with pure HTML and CSS, with the exception of some menus inserted from Bootstrap.
+
 This project was created as a Capstone project for the HTML/CSS module in the Mircoverse curriculum
 
 ## Built With
@@ -19,6 +21,18 @@ This project was created as a Capstone project for the HTML/CSS module in the Mi
 ## Live Demo
 
 [FRESH FINDER Live Demo](https://raw.githack.com/mateomh/Store-Finder/store-finder-page/index.html)
+
+
+## Setup
+To get a copy of this website on your computer, you just have to clone the [repository](https://github.com/mateomh/Store-Finder.git) and open the index.html file in your browser.
+
+## Usage
+When you open the **index.html**,  a welcome page will show, asking you for a search term, and further down will explain the website, its features, and the contact information.
+After clicking the search button, you are taken to the **results page**, where you can see the results and filter them according to your needs. For every result, you will see a picture of the business, a name, and a description for it.
+By clicking on any result, the **information page** will display the full information from that business, like the location and contact details.
+
+### Deployment
+To deploy the site just go to any hosting of your preference and then copy all the **.html** the **css** and **images** folder
 
 
 ## Author
