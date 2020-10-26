@@ -28,7 +28,9 @@ To get a copy of this website on your computer, you just have to clone the [repo
 
 ## Usage
 When you open the **index.html**,  a welcome page will show, asking you for a search term, and further down will explain the website, its features, and the contact information.
+
 After clicking the search button, you are taken to the **results page**, where you can see the results and filter them according to your needs. For every result, you will see a picture of the business, a name, and a description for it.
+
 By clicking on any result, the **information page** will display the full information from that business, like the location and contact details.
 
 ### Deployment
